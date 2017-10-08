@@ -1,0 +1,157 @@
+/* ================================= 
+-----DEFAULT STYLES-----
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1em;
+	color: #3a3a3a;
+	margin: 0 auto;
+}
+
+header,
+ol,
+ul,
+nav,
+main-nav {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+	font-size: 1em;
+	color:  #3a3a3a;
+}
+
+h1,
+h2,
+h3,
+a {
+	color: #3a3a3a;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/* ================================= 
+---- Header Section ----
+==================================== */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.img {
+	size: auto;
+}
+
+
+/* ================================= 
+---- Navigation Style----
+==================================== */
+
+.main-nav {
+	margin: 5px 0 0 0;
+}
+
+.main-nav a {
+	text-align: center;
+	text-transform: uppercase;
+	display: block;
+	padding: 10px 15px;
+	font-size: 1.25em;
+	color: black;
+	background: white;
+}
+
+.main-nav a:hover {
+	color: #ffffff;
+	background: #00a89e;
+	text-decoration: none;
+}
+
+
+/* ================================= 
+---- Main Section ----
+==================================== */
+
+.headline {
+	margin-bottom: 0;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+/* ================================= 
+---- Carousel ----
+==================================== */
+#carousel-inner,
+#item-active,
+#item {
+	width: 100%;
+
+}
+
+
+/* ================================= 
+---- Footer Section ----
+==================================== */
+
+.main-footer {
+	text-align: center;
+	background: lightgray;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.main-header,
+	.main-section,
+	.google-map,
+	.footer{
+		width: 100%;
+		margin: 0 auto;
+		max-width: 1150px;
+		padding: 10px;
+	}
+
+	.main-header,
+	.main-nav {
+		display: flex;
+	}
+
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (min-width: 1025px) {
+    
+        .main-header {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+    }
