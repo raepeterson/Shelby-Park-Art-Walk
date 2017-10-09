@@ -59,6 +59,7 @@ img {
 
 .img {
 	size: auto;
+	display: inline-flex;
 }
 
 
@@ -76,12 +77,12 @@ img {
 	display: block;
 	padding: 10px 15px;
 	font-size: 1.25em;
-	color: black;
-	background: white;
+	color: white;
+	background: #00a89e;
 }
 
 .main-nav a:hover {
-	color: #ffffff;
+	color: #000;
 	background: #00a89e;
 	text-decoration: none;
 }
@@ -107,6 +108,32 @@ img {
 	width: 100%;
 
 }
+/* ================================= 
+---- Instructions ----
+==================================== */
+a, 
+h1 {
+	font-size: 1.1em;
+	padding: 1em;
+	margin: 0;
+}
+
+h1,
+h2 {
+	text-align: center;
+	padding-top: 1em;
+	margin: 0;
+}
+
+
+/* ================================= 
+---- Google Map ----
+==================================== */
+.google-map {
+	width: 100%;
+	margin: 0;
+}
+
 
 
 /* ================================= 
@@ -115,9 +142,8 @@ img {
 
 .main-footer {
 	text-align: center;
-	background: lightgray;
+	background: #00a89e;
 	padding: 2em 0;
-	margin-top: 30px;
 }
 
 
@@ -128,7 +154,6 @@ img {
 @media (min-width: 769px) {
 	.main-header,
 	.main-section,
-	.google-map,
 	.footer{
 		width: 100%;
 		margin: 0 auto;
@@ -137,7 +162,8 @@ img {
 	}
 
 	.main-header,
-	.main-nav {
+	.main-nav,
+	.google-map {
 		display: flex;
 	}
 
@@ -149,9 +175,14 @@ img {
 
 @media (min-width: 1025px) {
     
-        .main-header {
+		.main-header {
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
         }
-    
+	
+		.google-map {
+            flex-direction: row;
+            justify-content: center;
+        }
+
     }
