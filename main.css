@@ -2,36 +2,61 @@
 -----DEFAULT STYLES-----
 ==================================== */
 
-* {
+/* ================================= 
+* border-box = The min/max width and height properties
+includes content, padding and border, but not the margin
+==================================== */
+
+*, *:before, *:after {
 	box-sizing: border-box;
+	box-sizing: inherit;
 }
 
+/* ================================= 
+body default styles
+==================================== */
+html,
 body {
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1em;
 	color: #3a3a3a;
-	margin: 0 auto;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	
 }
 
 header,
 ol,
 ul,
 nav,
-main-nav {
+.main-nav,
+.main-header {
+  flex-direction: column;
   margin: 0;
   padding: 0;
 }
 
-p {
+p, 
+p2 {
 	font-size: 1em;
 	color:  #3a3a3a;
+	line-height: normal;
 }
+
+h4 {
+	text-align: center;
+}
+
+
 
 h1,
 h2,
 h3,
+h4,
 a {
-	color: #3a3a3a;
+	color:  #3a3a3a;
+	line-height: normal;
 }
 
 h2,
@@ -43,46 +68,36 @@ a {
 	text-decoration: none;
 }
 
-img {
-	max-width: 100%;
-}
+
 
 
 /* ================================= 
 ---- Header Section ----
 ==================================== */
 
-.main-header {
-	padding-top: .5em;
-	padding-bottom: .5em;
+img.logo {
+	padding: 1em;
+	margin: 0;
 }
-
-.img {
-	size: auto;
-	display: inline-flex;
-}
-
 
 /* ================================= 
 ---- Navigation Style----
 ==================================== */
 
-.main-nav {
-	margin: 5px 0 0 0;
-}
-
 .main-nav a {
 	text-align: center;
 	text-transform: uppercase;
+	text-decoration: none;
 	display: block;
-	padding: 10px 15px;
+	padding: 25px 30px;
+	margin: 4px;
 	font-size: 1.25em;
 	color: white;
-	background: #00a89e;
+	background: #50b149;
 }
 
 .main-nav a:hover {
-	color: #000;
+	color: white;
 	background: #00a89e;
 	text-decoration: none;
 }
@@ -93,47 +108,60 @@ img {
 ==================================== */
 
 .headline {
-	margin-bottom: 0;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding-top: 54px;
 	text-align: center;
-	text-decoration: none;
+	text-decoration: bold;
 	font-size: 1.2em;
+	color: black;
 }
 
-/* ================================= 
----- Carousel ----
-==================================== */
-#carousel-inner,
-#item-active,
-#item {
-	width: 100%;
 
-}
+
+
 /* ================================= 
----- Instructions ----
+---- Flexbox Grid Image Gallery ----
 ==================================== */
-a, 
-h1 {
-	font-size: 1.1em;
-	padding: 1em;
-	margin: 0;
+.column {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .column {
+    flex: 1;
+  }
+  ._25 {
+    flex: 2.5;
+  }
+  ._5 {
+    flex: 5;
+  }
+}
+
+/* Style */
+
+.column {
+  padding: 0px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0;
 }
 
 h1,
-h2 {
-	text-align: center;
-	padding-top: 1em;
-	margin: 0;
+h2,
+h3 {
+  text-align: center;
+  padding-top: .2em;
 }
-
-
-/* ================================= 
----- Google Map ----
-==================================== */
-.google-map {
-	width: 100%;
-	margin: 0;
-}
-
 
 
 /* ================================= 
@@ -142,7 +170,7 @@ h2 {
 
 .main-footer {
 	text-align: center;
-	background: #00a89e;
+	background: #50b149;
 	padding: 2em 0;
 }
 
@@ -151,22 +179,51 @@ h2 {
   Media Queries
 ==================================== */
 
+@media (min-width: 480px) {
+	.main-header,
+	.main-section,
+	.footer{
+		width: 100%;
+		margin: 0 auto;
+		padding: 10px;
+	}
+
+	p {
+	font-size: 1.2em;
+}
+
+
+}
+
 @media (min-width: 769px) {
 	.main-header,
 	.main-section,
 	.footer{
 		width: 100%;
 		margin: 0 auto;
-		max-width: 1150px;
 		padding: 10px;
 	}
 
 	.main-header,
-	.main-nav,
-	.google-map {
+	.main-nav {
 		display: flex;
+		flex-direction: row;
 	}
 
+	p,
+	p-caption,
+	h3 {
+		font-size: 1.2em;
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+
+	h2 {
+		font-size: 1.3 em;
+	}
 	.main-header {
 		flex-direction: column;
 		align-items: center;
@@ -180,9 +237,15 @@ h2 {
             justify-content: space-around;
         }
 	
-		.google-map {
-            flex-direction: row;
-            justify-content: center;
-        }
+		p {
+			font-size: 1.2em;
+		}
 
-    }
+		.footer{
+		width: 100%;
+		margin: 0 auto;
+		max-width: 1150px;
+		padding: 10px;
+		}
+
+}
