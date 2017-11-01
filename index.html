@@ -1,74 +1,141 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-<html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="utf-8">
-	<title>Shelby Park Art Walk</title>
-	<link rel="stylesheet" href="normalize.css">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type='text/css'>
-	<link rel="stylesheet" href="main.css">
-</head>
+<html lang="en">
+
+	<head>
+		<title>Shelby Park Art Walk</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+		crossorigin="anonymous">
+		<link rel="stylesheet" href="custom.css">
+	</head>
 
 	<body>
-
-		<header class ="main-header">
-			
-			<img class="logo" src="images/logo.png">
-			<h1 class="headline">Get up close and personal.</h1>
-			<nav>
-				<ul class="main-nav">
-					<li><a href="https://www.google.com/maps/d/u/0/viewer?hl=en&mid=1i1YX3qxqbv_Ml4EqTkHkhhPYJ98&ll=38.23341036788129%2C-85.74348450554197&z=15">mural map</a></li>
-					<li><a href="about.html">about</a></li>
-					<li><a href="contact.html">contact</a></li>
-				</ul>
-			</nav>
-		</header>   
-
-		<main class="main-section">
-
-			<div class="full-width">
-							
-				<div class="column">
-					<img src="images/sunshine_and_shadows.jpg" height="100%" width="100%">
+		<!-- navbar -->
+		<nav class="navbar navbar-light bg-light navbar-expand-lg bg-primary fixed-top">
+			<div class="container d-flex flex-row-reverse">
+				<a class="navbar-brand navbar-left mr-0" href="https://www.shelbyparklouisville.org" target="_blank"><img src="images/logo.png" class="img-fluid"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+				 aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-item nav-link" href="#home">Home
+							<span class="sr-only">(current)</span>
+						</a>
+						<a class="nav-item nav-link" href="#about">About</a>
+						<a class="nav-item nav-link" href="#contact">Contact</a>
+						<a class="nav-item nav-link" href="https://www.google.com/maps/d/u/0/viewer?hl=en&mid=1i1YX3qxqbv_Ml4EqTkHkhhPYJ98&ll=38.23341036788129%2C-85.74348450554197&z=15"target="_blank">Mural Map</a>
+					</div>
 				</div>
-			
-				<div class="column">
-					<h2>Sunshine & Shadow
-						<br>Gibbs Rounsavall 2015</h2>
-				</div>
-
-				<div class="column">
-					<h3>
-						<a href="#">Map It</a>
-					</h3>
-					<h4>Scarlet's Bakery
-						<br>714 East Oak Street
-						<br>Louisville, KY</h4>
-				</div>
-
 			</div>
-
-
-		</main>
-
-		<footer class="main-footer">
-			<section class="footer-inner">
-				<span>&copy;2017 r.peterson</span>
-				<p>Do I need this footer paragraph?</p>
-			</section>	
-		</footer>
-
+		</nav>
+		<!-- /navbar -->
 		
-		
+		<!-- jumbotron -->
+		<div class="jumbotron bg-info text-white">
+			<div class="container text-sm-center pt-5">
+				<h1 class="display-2">Take a walk...</h1>
+				<p class="lead">Shelby Park Murals Up Close & Personal</p>
+			</div>
+		</div>
+		<!-- /jumbotron -->
+
+		<!-- mural cards -->
+		<div class="container-fluid">
+			<div class="card-deck">
+				<div class="card">
+					<img class="card-img-top" src="images/scarlets_bakery.jpg" alt="Card image cap">
+					<div class="card-body">
+						<h4 class="card-title">
+							Sunshine & Shadow<br>
+							Gibbs Rounsavall 2015
+						</h4>
+						<p class="card-text">
+							Scarlet's Bakery<br>
+							714 East Oak Street<br>
+							Louisville, KY
+						</p>
+						<p class="card-text">
+							<button type="button" href="#muralmap" class="btn btn-success">Map It</button>
+								<script>
+									function relocate_home() {
+										location.href = "www.https://www.google.com/maps/place/A+A+Auto+Repair/@38.2333392,-85.7418726,18.57z/data=!4m13!1m7!3m6!1s0x88690d36b01275e3:0xf94cf074a8797f1e!2s741+E+Oak+St,+Louisville,+KY+40203!3b1!8m2!3d38.2335532!4d-85.741627!3m4!1s0x88690d3146278787:0xf003b8ed008b22c0!8m2!3d38.2331322!4d-85.7403852";
+									} 
+								</script>
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-img-top" src="images/were_all_just_bones.jpg" alt="Card image cap">
+					<div class="card-body">
+						<h4 class="card-title">
+							We're All Just Bones<br>
+							Miss Birdy 2017
+						</h4>
+						<p class="card-text">
+							AA Auto Repair<br>
+							1200 Logan Street<br>
+							Louisville, KY
+						</p>
+						<p class="card-text">
+							<button type="button" href="#muralmap" class="btn btn-success" onclick=" relocate_home()">Map It</button>
+							<script>
+								function relocate_home() {
+									location.href = "www.https://www.google.com/maps/place/A+A+Auto+Repair/@38.2333392,-85.7418726,18.57z/data=!4m13!1m7!3m6!1s0x88690d36b01275e3:0xf94cf074a8797f1e!2s741+E+Oak+St,+Louisville,+KY+40203!3b1!8m2!3d38.2335532!4d-85.741627!3m4!1s0x88690d3146278787:0xf003b8ed008b22c0!8m2!3d38.2331322!4d-85.7403852";
+								} 
+							</script>
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-img-top" src="images/three_points.jpg" alt="Card image cap">
+					<div class="card-body">
+						<h4 class="card-title">
+							Three Points<br>
+							Henry Cunningham &<br>
+							Chris Chappell 2015
+						</h4>
+						<p class="card-text">
+							Abell Elevator Co.<br>
+							1256 Logan Street<br>
+							Louisville, KY
+						</p>
+						<p class="card-text">
+							<button type="button" href="#muralmap" class="btn btn-success" onclick=" relocate_home()">Map It</button>
+							<script>
+								function relocate_home() {
+									location.href = "https://www.google.com/maps/place/Abell+Elevator+International,+Inc./@38.230655,-85.7427137,17z/data=!3m1!4b1!4m5!3m4!1s0x88690d30cecbb67b:0x692feb75d2783a4!8m2!3d38.230655!4d-85.740525";
+								} 
+							</script>
+						</p>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<!-- /mural cards -->
+
+
+		<div class="footer navbar-fixed-bottom">
+			<div class="row">
+				<div class="col-lg">
+					<a class="a-footer" href="https://github.com/raepeterson/Shelby-Park-Art-Walk" target="blank">&copy;2017 Rachel Peterson</a>
+					<br><a class="a-footer" href="https://www.codelouisville.org/" target="blank">Infinite Thanks to Code Louisville!</a>
+				</div>
+			</div>
+		</div>
+
+	
+
+
+
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+		crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+		crossorigin="anonymous"></script>
 	</body>
-
-</div>
-<script>
-	$(document).ready(function () {
-		/* affix the navbar after scroll below header */
-		$(".main-header").affix({ offset: { top: $("header").outerHeight(true) } });
-	});
-</script>
-
 </html>
