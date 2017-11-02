@@ -1,11 +1,11 @@
 # Shelby-Park-Art-Walk
-This is my Code Lou project and a thumbs up to public art pushing the evolution of my neighborhood in a positive direction. 
 
-Shelby Park's murals materialized from many sources over the past few years: a private equity firm, several local independent businesses, a 
-non-profit specializing in streetscape beautification and the local neighborhood association.
+This is my Code Lou Front End Web Development (Sept 2017). It's a simple website built with Bootstrap v4 + a little custom CSS + a dash of JS. Enjoy!
 
-The purpose of this project is to:
+The site is also a thumbs up to public art pushing the evolution of my neighborhood in a positive direction. We have some lovely murals in Shelby Park.
+```
+The purpose of this website is to:
 
 1. encourage people to take an art walk in Shelby Park, Louisville, KY to enjoy the murals
-2. demonstrate how transitional neighborhoods benefit from large scale public art
-3. inspire others to incorporate public art into their neighborhoods
+2. demonstrate how evolving neighborhoods benefit from large scale public art
+3. inspire others to incorporate public art into their community

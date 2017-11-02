@@ -20,18 +20,22 @@ body{
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #50b149;
-    font-weight: 400;
+    color: #00a89e;
+    font-weight: 600;
     font-size: 1.3rem;
     margin-right: .5rem;
 }
 
 .navbar-toggler-collapsed {
-    color: #50b149;
+    color: #00a89e;
+}
+
+.btn {
+
 }
 
 .footer {
-    background-color: #50b149;
+    background-color: #00a89e;
     margin: 0;
     padding-top: 2.2rem;
     padding-bottom: .6rem;
