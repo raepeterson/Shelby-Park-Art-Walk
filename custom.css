@@ -1,18 +1,55 @@
-.jumbotron {
+h1 {
+    font-family: 'Amaranth', sans-serif;
+}
+
+h2, h3, h4, p, .display-2 {
+    font-family: 'Lato', sans-serif;
+}
+
+.jumbotron-fluid {
     background-color: #f8f9fa!important;
     background-image: url(images/sunshine_and_shadows.jpg);
     background-size: cover;
-    padding-top: 8rem;
-    
+    font-family: 'Lato', sans-serif;
+}
+
+.bg-info {
+    background-color: #f8f9fa!important;
+}
+
+.btn-primary {
+   background-color: #00a89e;
+   box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+   border-color: rgba(119, 136, 153, 0.671);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-focus {
+    background-color:#00a89e;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-primary:not([disabled]):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: rgba(0,123,255,.5);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+.pt-5, .py-5 {
+    padding-top: 10rem!important;
+    padding-bottom: 4rem!important;
 }
 
 .lead {
-    font-weight: 400;
+    font-family: 'Amaranth', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
 }
 
 .container-fluid {
     background-color: #f8f9fa!important;
     margin-bottom: 2rem;
+    padding-top: 2rem;
 }
 
 body{
@@ -23,15 +60,15 @@ body{
     color: #00a89e;
     font-weight: 600;
     font-size: 1.3rem;
-    margin-right: .5rem;
+    padding-right: 3rem;
 }
 
 .navbar-toggler-collapsed {
     color: #00a89e;
 }
 
-.btn {
-
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 3rem;
 }
 
 .footer {
@@ -56,5 +93,21 @@ a:hover {
 }
 
 .col-lg {
-    text-align: center
+    text-align: center;
+}
+
+.p-footer {
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    background-color: #f8f9fa!important;
+    background-image: url(images/shelby_park_fall2.jpg);
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+
+.col-md {
+    margin-bottom: 2rem;
 }

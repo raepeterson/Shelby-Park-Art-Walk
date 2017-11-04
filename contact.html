@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shelby Park Art Walk</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth:700|Lato|Work+Sans:700" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-light bg-light navbar-expand-lg bg-primary fixed-top">
+        <div class="container d-flex flex-row-reverse">
+            <a class="navbar-brand navbar-left mr-0" href="https://www.shelbyparklouisville.org" target="_blank">
+                <img src="images/logo.png" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /navbar -->
+
+    <!-- jumbotron -->
+    <div class="jumbotron bg-info text-white">
+        <div class="container text-sm-center pt-5">
+            <h1 class="display-2"></h1>
+        </div>
+    </div>
+    <!-- /jumbotron -->
+
+    <!-- main content -->
+    <div class="container">
+
+        <div class="row justify-content-md-center">
+            <div class="col-md">
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FShelbyParkNeighborhoodAssociation%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                    width="120%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </div>
+
+            <!-- about card -->
+            <div class="col-md">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            JOIN US
+                        </h4>
+                        <p class="card-text">
+                            All are welcome at SPNA’s monthly meeting every second Thursday of each month at 6:00 pm at the Shelby Park Community Center,
+                            600 East Oak Street, Louisville, KY.</p>
+                        <p class="card-text">
+                            Residents and local businesses are invited to become a member. Members are encouraged to develop or participate in community projects.
+                        </p>
+                        <p class="card-text">
+                            Membership fees are $1.00 per year for individuals and $5.00 per year for businesses.
+                        </p>
+                        <p class="card-text">
+                            Message us on Facebook, <a href="mailto:spnalouisville@gmail.com">Email Us</a>, or Mail to:<br>
+                            Shelby Park Neighborhood Association<br>
+                            c/o Shelby Park Community Center<br>
+                            600 East Oak Street<br>
+                            Louisville, KY 40203<br>
+                        </p>
+
+                        <p class="card-text">
+                            <button type="button" class="btn btn-success" onclick="relocate_map_community_center()">Map It</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+ 
+    <div class="footer navbar-fixed-bottom">
+        <div class="row">
+            <div class="col-lg">
+                <a class="a-footer" href="https://github.com/raepeterson/Shelby-Park-Art-Walk" target="blank">Site by Rachel Peterson | 2017</a>
+                <br>
+                <p class="p-footer">Code Lou Front End Web Development Sept 2017 Project
+                    <br> Made with Bootstrap v4.0 + a little custom CSS + a dash of JS. Yum.</p>
+                <br>
+                <a class="a-footer" href="https://www.codelouisville.org/" target="blank">Infinite Thanks to Code Louisville!</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function relocate_map_community_center() {
+            location.href = "https://www.google.com/maps/dir/38.2339351,-85.7414948/Shelby+Park+Community+Center,+600+E+Oak+St,+Louisville,+KY+40203/@38.232534,-85.7483192,16z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x88690d360f6f9763:0x73eec328820bc834!2m2!1d-85.7453087!2d38.2338868!3e0";
+        }
+    </script>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
