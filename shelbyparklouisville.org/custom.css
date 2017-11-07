@@ -1,3 +1,4 @@
+/*Typography*/
 h1 {
     font-family: 'Amaranth', sans-serif;
 }
@@ -6,54 +7,34 @@ h2, h3, h4, p, .display-2 {
     font-family: 'Lato', sans-serif;
 }
 
-.jumbotron-fluid {
-    background-color: #f8f9fa!important;
-    background-image: url(images/sunshine_and_shadows.jpg);
-    background-size: cover;
-    font-family: 'Lato', sans-serif;
-}
-
+/*Body, Containers, Rows Styles*/
 .bg-info {
-    background-color: #f8f9fa!important;
-}
-
-.btn-primary {
-   background-color: #00a89e;
-   box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-   border-color: rgba(119, 136, 153, 0.671);
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-focus {
-    background-color:#00a89e;
-    border-color: rgba(255, 255, 255, 0.5);
-}
-
-.btn-primary:not([disabled]):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: rgba(0,123,255,.5);
-    border-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-}
-
-.pt-5, .py-5 {
-    padding-top: 10rem!important;
-    padding-bottom: 4rem!important;
-}
-
-.lead {
-    font-family: 'Amaranth', sans-serif;
-    font-weight: 300;
-    font-size: 1.4rem;
+    background-color: #f0eeee!important;
 }
 
 .container-fluid {
-    background-color: #f8f9fa!important;
+    background-color: #f0eeee!important;
     margin-bottom: 2rem;
     padding-top: 2rem;
 }
 
 body{
-    background-color: #f8f9fa!important;
+    background-color: #f0eeee!important;
+}
+
+.col-md {
+    margin-bottom: 2rem;
+}
+
+.col-lg {
+    text-align: center;
+}
+
+
+/*Nav*/
+
+.navbar {
+    background: #fff;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -71,8 +52,67 @@ body{
     padding-right: 3rem;
 }
 
-.footer {
+.navbar-toggler {
+    border: none;
+}
+
+/*Jumbotron Home & About Pages Only*/
+.jumbotron-fluid {
+    background-color: #f8f9fa!important;
+    background-image: url(images/sunshine_and_shadows.jpg);
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    padding-top: 10rem!important;
+    padding-bottom: 4rem!important;
+    }
+
+.display-2 {
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: .9;
+    }
+
+.lead {
+    font-family: 'Amaranth', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+
+
+
+/*Jumbotron Button on Home & About Page Only*/
+.btn-primary {
+   background-color: #00a89e;
+   box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+   border-color: rgba(119, 136, 153, 0.671);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-focus {
+    background-color:#00a89e;
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: rgb(119, 136, 153);
+}
+
+.btn-primary:not([disabled]):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
     background-color: #00a89e;
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+
+/*Jumbotron Contact Page Only*/
+.jumbotron {
+    background-color: #f8f9fa!important;
+    background-image: url(images/shelby_park_fall2.jpg);
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+
+/*Footer*/
+.footer {
+    background-color: #00a89d;
     margin: 0;
     padding-top: 2.2rem;
     padding-bottom: .6rem;
@@ -86,14 +126,9 @@ body{
     align-content: center;
 }
 
-
 a:hover {
     color: black;
     text-decoration: none;
-}
-
-.col-lg {
-    text-align: center;
 }
 
 .p-footer {
@@ -101,13 +136,38 @@ a:hover {
     padding: 0;
 }
 
-.jumbotron {
-    background-color: #f8f9fa!important;
-    background-image: url(images/shelby_park_fall2.jpg);
-    background-size: cover;
-    font-family: 'Lato', sans-serif;
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 576px) { 
+    .display-2 {
+        font-size: 3rem;
+        font-weight: 300;
+        line-height: .9;
+        }
 }
 
-.col-md {
-    margin-bottom: 2rem;
+@media (min-width: 768px) { 
+    
 }
+
+@media (min-width: 992px) { 
+    
+}
+
+@media (min-width: 1200px) { 
+    .display-2 {
+        font-size: 5.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}
+
+
+
+
