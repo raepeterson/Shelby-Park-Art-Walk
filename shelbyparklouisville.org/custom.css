@@ -20,10 +20,12 @@ h2, h3, h4, p, .display-2 {
 
 body{
     background-color: #f0eeee!important;
+    overflow-x: hidden;
 }
 
 .col-md {
     margin-bottom: 2rem;
+    margin-top:2rem;
 }
 
 .col-lg {
@@ -35,6 +37,8 @@ body{
 
 .navbar {
     background: #fff;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -59,12 +63,17 @@ body{
 /*Jumbotron Home & About Pages Only*/
 .jumbotron-fluid {
     background-color: #f8f9fa!important;
-    background-image: url(images/sunshine_and_shadows.jpg);
-    background-size: cover;
     font-family: 'Lato', sans-serif;
     padding-top: 10rem!important;
     padding-bottom: 4rem!important;
     }
+
+.murals {
+    background-image: url(images/sunshine_and_shadows.jpg);
+    background-size: cover;
+}
+
+
 
 .display-2 {
         font-size: 2rem;
@@ -103,11 +112,15 @@ body{
 
 
 /*Jumbotron Contact Page Only*/
-.jumbotron {
+.jumbotron-fluid {
     background-color: #f8f9fa!important;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 10rem;
+}
+
+.contact {
     background-image: url(images/shelby_park_fall2.jpg);
     background-size: cover;
-    font-family: 'Lato', sans-serif;
 }
 
 /*Footer*/
@@ -136,7 +149,14 @@ a:hover {
     padding: 0;
 }
 
+.col-lg {
+        margin: 0!important;
+        flex-flow: column;
+}
 
+.row {
+    margin:0!important;
+}
 
 
 
@@ -150,6 +170,7 @@ a:hover {
         font-weight: 300;
         line-height: .9;
         }
+    
 }
 
 @media (min-width: 768px) { 
