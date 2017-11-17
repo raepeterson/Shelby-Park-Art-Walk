@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Amaranth:700|Lato|Work+Sans:700" rel="stylesheet">
     <link rel="icon" href="images/favicon.png">
     <link rel="shortcut icon" href="images/favicon.png">
-</head>
+ </head>
 
 <body>
     <!-- navbar -->
@@ -47,14 +47,9 @@
     <!-- main content -->
     <div class="container">
 
-        <div class="row justify-content-md-center">
-            <div class="col-md">
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FShelbyParkNeighborhoodAssociation%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                    width="120%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-            </div>
-
-            <!-- about card -->
-            <div class="col-md">
+        <div class="row justify-content-md">
+            <!-- contact card -->
+            <div class="col-lg">
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">
@@ -64,32 +59,49 @@
                             All are welcome at SPNA’s monthly meeting every second Thursday of each month at 6:00 pm at the Shelby Park Community Center,
                             600 East Oak Street, Louisville, KY.</p>
                         <p class="card-text">
-                            Residents and local businesses are invited to become a member. Members are encouraged to develop or participate in community projects.
+                            Residents and local businesses are invited to become a member. Members are encouraged to develop or participate in community
+                            projects.
                         </p>
                         <p class="card-text">
                             Membership fees are $1.00 per year for individuals and $5.00 per year for businesses.
                         </p>
                         <p class="card-text">
-                            Message us on Facebook, <a href="mailto:spnalouisville@gmail.com">Email Us</a>, or Mail to:<br>
-                            Shelby Park Neighborhood Association<br>
-                            c/o Shelby Park Community Center<br>
-                            600 East Oak Street<br>
-                            Louisville, KY 40203<br>
+                            Message us on Facebook,
+                            <a href="mailto:spnalouisville@gmail.com">Email Us</a>, or Mail to:
+                            <br> Shelby Park Neighborhood Association
+                            <br> c/o Shelby Park Community Center
+                            <br> 600 East Oak Street
+                            <br> Louisville, KY 40203
+                            <br>
                         </p>
-
+        
                         <p class="card-text">
-                            <button type="button" class="btn btn-success" onclick="relocate_map_community_center()">Map It</button>
+                            <a class="btn btn-success" href="https://www.google.com/maps/dir/''/Shelby+Park+Community+Center,+East+Oak+Street,+Louisville,+KY/@38.233866,-85.8153497,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x88690d360f6f9763:0x73eec328820bc834!2m2!1d-85.7453087!2d38.2338868"target="_blank" role="button">Get Directions</a>
                         </p>
                     </div>
                 </div>
             </div>
+            <!-- /contact card -->
+
+            
 
 
-
+            <!--facebook iframe-->
+            <div class="row justify-content-md-center">
+                <div class="col-sm iframe">
+                    <div class="alert alert-success" role="alert">
+                       <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                        Keep Up with SPNA on Facebook!
+                    </div>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FShelbyParkNeighborhoodAssociation%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                        + width="100%" height="80%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                </div>
+            </div>
         </div>
-
+        <!--/facebook iframe-->
     </div>
- 
+    <!--/main content-->
+
     <div class="footer navbar-fixed-bottom">
         <div class="row">
             <div class="col-lg">
@@ -103,21 +115,17 @@
         </div>
     </div>
 
-
-    <script>
-        function relocate_map_community_center() {
-            location.href = "https://www.google.com/maps/dir/38.2339351,-85.7414948/Shelby+Park+Community+Center,+600+E+Oak+St,+Louisville,+KY+40203/@38.232534,-85.7483192,16z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x88690d360f6f9763:0x73eec328820bc834!2m2!1d-85.7453087!2d38.2338868!3e0";
-        }
-    </script>
-
-
+ 
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
